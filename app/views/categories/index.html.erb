@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<h2>Categories</h2>
+<ul>
+<% @categories.each do |category|%>
+  <h3><li><a href="/categories/<%= category.id %>"><%= category.name %></a></li></h3>
+<% end %>
+</ul>
+
+<br>
+<a href="/posts/new">Create new Post</a>

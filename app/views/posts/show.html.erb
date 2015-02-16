@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @post.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @post.contact %>
+</p>
+
+<p>
+  <strong>Comission:</strong>
+  $<%= @post.comission %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @post.category_id %>
+</p>
+
+<a href="/categories/<%= @category.id %>">Back to <%= @category.name %>

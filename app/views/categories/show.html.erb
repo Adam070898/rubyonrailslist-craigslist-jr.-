@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h2>Posts under <%= @category.name %></h2>
+  <% @posts.each do |post| %>
+    <h3><a href="/posts/<%= post.id %>"><%= post.name %></a> - $<%= post.comission %></h3>
+    <p><%= post.description %></p>
+
+  <% end %>
+</p>
+
+<%= link_to 'Back', categories_path %>
